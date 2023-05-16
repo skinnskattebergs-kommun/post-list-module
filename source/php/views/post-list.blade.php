@@ -7,7 +7,7 @@
 
     @foreach ($posts as $post)
     <div class="grid-xs-12">
-        <a href="{{ $post->permalink }}" class="box box-news box-news-horizontal" data-equal-item>
+        <a href="{{ get_permalink($post->ID) }}" class="box box-news box-news-horizontal" data-equal-item>
             @if (get_the_post_thumbnail($post))
             <div class="box-image-container">
 
